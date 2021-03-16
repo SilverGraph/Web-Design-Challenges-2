@@ -1,0 +1,116 @@
+body {
+    font-family: "Karla";
+    margin: 0;
+    /* padding: 1% 10%; */
+    background-color: hsl(204, 43%, 93%)
+}
+
+.heading {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.dollar {
+    color: white;
+    display: inline-block;
+    font-weight: 700;
+}
+
+h4 {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+p {
+    color: hsl(204, 43%, 93%);
+    font-size: 18px;
+}
+
+span {
+    position: relative; bottom: 7px; left: 10px; color: hsl(204, 43%, 93%);
+    opacity: 0.75;
+}
+
+.description {
+    background-color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    font-weight: 700;
+    padding: 8% 9% 4% 6%;
+}
+
+.row {
+    margin: auto;
+}
+
+.pricing {
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 10px;
+    padding: 6% 7% 4% 6%;
+}
+
+.sign-up {
+    background-color: hsl(71, 73%, 54%);
+    border: 0;
+    line-height: 2;
+    width: 100%;
+}
+
+.sign-up:hover {
+    background-color: hsla(71, 73%, 54%, 0.842);
+}
+
+.whyUs {
+    background-color: #74c7b8;
+    border-radius: 0 0 10px 0;
+    padding: 6% 16% 4% 6%;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+#main {
+    margin: auto;
+    padding: 5% 5% 0;
+    width: 900px;
+}
+
+@media screen and (max-width: 770px) {
+
+    h4 {
+        margin-bottom: 1rem;
+    }
+
+    .description {
+        padding: 8% 15% 8% 8%;
+        line-height: 2;
+    }
+
+    .pricing {
+        padding: 8%;
+        border-radius: 0;
+    }
+
+    .whyUs {
+        padding: 8% 40% 4% 8%;
+        border-radius: 0 0 10px 10px;
+        line-height: 1.7;
+    }
+
+    .heading {
+        margin-bottom: 2rem;
+    }
+
+    .sign-up {
+        margin-top: 20px;
+    }
+
+    #main {
+        width: 500px;
+    }
+}
