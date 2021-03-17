@@ -1,3 +1,5 @@
+### Added the live site URL: https://challenge-4-pink.vercel.app/
+
 # Frontend Mentor - Single Price Grid Component
 
 ![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)
