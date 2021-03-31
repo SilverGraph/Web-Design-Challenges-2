@@ -1,0 +1,123 @@
+/* TAG SELECTORS */
+body {
+    background-color: hsl(0, 0%, 98%);
+    text-align: center;
+    font-family: "Poppins";
+}
+
+h2 {
+    margin: 0;
+}
+
+img {
+    float: right;
+    position: relative;
+    top: 40px;
+}
+
+/* CLASS SELECTORS */
+.head-1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 4rem auto 0;
+}
+
+.head-2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.intro {
+    color: hsl(229, 6%, 66%);
+    display: inline-block;
+    font-size: 15px;
+    width: 500px;
+}
+
+.main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.supervisor, .calculator {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 10px 10px rgba(0, 0, 0, 0.072),
+        0 10px 10px rgba(0, 0, 0, 0.086),
+        0 10px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    display: inline-block;
+    height: 225px;
+    margin: 30px;
+    padding: 2rem;
+    width: 350px;
+}
+
+.mid {
+    display: inline-block;
+}
+
+.mid-1, .mid-2 {
+    border-radius: 5px;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 10px 10px rgba(0, 0, 0, 0.072),
+        0 10px 10px rgba(0, 0, 0, 0.086),
+        0 10px 10px rgba(0, 0, 0, 0.12);
+    height: 225px;
+    margin: 30px 0;
+    padding: 2rem;
+    width: 350px;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 376px) {
+
+    body {
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    .head-1 {
+        display: inline-block;
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 4rem auto 0;
+    }
+
+    .head-2 {
+        display: inline-block;
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 0 auto 1rem;
+    }
+
+    .intro {
+        margin: 2rem auto 4rem;
+        width: 300px;
+    }
+
+    .supervisor, .mid-1, .mid-2, .calculator {
+        display: block;
+        margin: 1rem auto;
+        width: 300px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+}
