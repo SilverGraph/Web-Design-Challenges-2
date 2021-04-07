@@ -1,0 +1,180 @@
+body {
+    align-items: center;
+    background-image: linear-gradient(#AF68EA, #6462E7);
+    background-repeat: no-repeat;
+    display: flex;
+    font-family: "Kumbh Sans", serif;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+/* ANSWER */
+.answer {
+    color: hsl(240, 6%, 50%);
+    line-height: 1.2;
+    margin: 0;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+/* QNA-DIV */
+.faq {
+    border-bottom: 1px solid hsl(240, 6%, 50%);
+    height: 2.4rem;
+    overflow: hidden;
+}
+.faq-clicked {
+    height: auto;
+}
+
+/* FAQ-DIV */
+.faq-section {
+    /* padding: 60px 85px 0 10px; */
+    padding: 6% 10% 6% 3%;
+    width: 40%;
+}
+
+/* ARROW */
+.fas {
+    color: hsl(14, 88%, 65%);
+    float: right;
+    position: relative;
+    transition: transform 0.5s;
+}
+.fas-clicked {
+    transform: rotate(180deg);
+}
+
+/* BOX-IMAGE */
+.img-box {
+    left: /*-23%;*/ -100px;
+    position: relative;
+    top: /*42%;*/   200px;
+    z-index: 5;
+}
+
+/* IMAGES-DIV */
+.images {
+    background-image: url(images/bg-pattern-desktop.svg), url(images/illustration-woman-online-desktop.svg);
+    background-position: -80vh -19.5vw, -11.5vh 4.25vw;
+    background-repeat: no-repeat, no-repeat;
+    height: 100%;
+    margin: 0;
+    width: 50%;
+}
+
+/* MAIN CARD */
+.main {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+    position: relative;
+    width: /*65%;*/ 1000px;
+}
+
+/* QUESTION */
+.question {
+    display: inline-block;
+    font-weight: 400;
+    margin: 0;
+    padding: 10px 0 12px;
+    transition: transform 0.5s;
+    width: 100%;
+}
+.question-clicked {
+    font-weight: 700;
+    /* transform: all 1s ease-in; */
+}
+.question:hover {
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+#img-mobile {
+    visibility: hidden;
+}
+
+#img-bg {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 376px) {
+    html {
+        height: 100%;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+
+    .images {
+        background: none;
+        height: 75px;
+    }
+
+    .img-box {
+        visibility: hidden;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 25px;
+        width: 90%;
+    }
+
+    .images, .faq-section {
+        padding: 20px;
+        width: fit-content;
+    }
+
+    .question {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    #img-mobile {
+        bottom: 315px;
+        position: relative;
+        visibility: visible;
+    }
+
+    #img-bg {
+        bottom: 400px;
+        left: 25px;
+        position: relative;
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1120px) {
+    .main {
+        width: 95%;
+    }
+
+    .faq-section {
+        padding: 5% 3% 0 0;
+        width: 45%;
+    }
+}
